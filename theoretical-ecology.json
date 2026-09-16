@@ -1,0 +1,872 @@
+{
+  "profile_name": "example-theoretical-ecology",
+  "configured": true,
+  "language": "en",
+  "contact_email": "",
+  "research_context": "Example profile: a PhD programme at the interface of theoretical ecology and mathematical biology - Modern Coexistence Theory (MCT), biodiversity-ecosystem functioning and stability (BEF/BES), and community dynamics in stochastic environments. Methodological preferences: rigorous derivations (Ito SDEs, Fokker-Planck equations, linear noise approximation, permanence theory, the geometry of structural stability), spatial metacommunity simulations, and empirical tests with temperate/boreal forest-plot data and ForestGEO censuses.",
+  "active_projects": [
+    {
+      "key": "mct-review",
+      "label": "MCT review: storage effect, relative nonlinearity and lottery-model derivations",
+      "keywords": [
+        "storage effect",
+        "relative nonlinearity",
+        "lottery model",
+        "coexistence mechanism partitioning",
+        "invasion growth rate",
+        "temporal niche"
+      ]
+    },
+    {
+      "key": "structural-stability",
+      "label": "pairwise vs structural niche/fitness-difference metrics",
+      "keywords": [
+        "structural stability",
+        "feasibility domain",
+        "niche difference",
+        "fitness difference",
+        "interaction matrix",
+        "community-level coexistence metrics"
+      ]
+    },
+    {
+      "key": "stochastic-mct",
+      "label": "two-species consumer-resource SDE and stochastic MCT",
+      "keywords": [
+        "stochastic differential equation",
+        "consumer-resource",
+        "environmental stochasticity",
+        "demographic stochasticity",
+        "Fokker-Planck",
+        "stochastic persistence",
+        "quasi-stationary distribution"
+      ]
+    },
+    {
+      "key": "bef-bes",
+      "label": "BEF/BES: diversity-functioning/stability under environmental stochasticity (incl. meta-analysis work)",
+      "keywords": [
+        "biodiversity ecosystem functioning",
+        "ecosystem stability",
+        "asynchrony",
+        "portfolio effect",
+        "insurance hypothesis",
+        "meta-analysis"
+      ]
+    },
+    {
+      "key": "forest-empirics",
+      "label": "Forest-plot empirics: data-based tests of diversity, coexistence and stability",
+      "keywords": [
+        "ForestGEO",
+        "boreal forest",
+        "conspecific negative density dependence",
+        "neighborhood competition",
+        "tree species coexistence",
+        "forest census"
+      ]
+    }
+  ],
+  "priority_questions": [
+    "How do MCT mechanism partitions (storage effect / relative nonlinearity) generalise rigorously to multispecies and consumer-resource structures in stochastic environments?",
+    "When do pairwise niche/fitness differences and structural (feasibility-domain) metrics agree or disagree in multispecies communities, and is there a principled community-level aggregation?",
+    "How does environmental stochasticity (including autocorrelated noise and extreme events) jointly affect coexistence and BEF/BES relationships?",
+    "Can permanence / invasion-graph theory yield coexistence criteria that are testable with real data?",
+    "Which statistical models (IPMs, GLMM/GNLMM, hierarchical Bayesian) can reliably estimate the strength of coexistence mechanisms in boreal-forest and ForestGEO plots?"
+  ],
+  "queries": {
+    "openalex": [
+      "\"modern coexistence theory\" OR \"coexistence theory\" OR \"storage effect\" OR \"relative nonlinearity\" OR \"niche difference\" OR \"fitness difference\" OR \"invasion growth rate\"",
+      "\"structural stability\" AND (coexistence OR community OR competition OR feasibility)",
+      "(biodiversity AND (\"ecosystem stability\" OR \"ecosystem functioning\" OR \"temporal stability\" OR asynchrony OR \"portfolio effect\" OR \"insurance hypothesis\"))",
+      "(\"environmental stochasticity\" OR \"demographic stochasticity\" OR \"stochastic Lotka-Volterra\" OR \"stochastic differential equation\") AND (coexistence OR community OR persistence OR extinction)",
+      "(\"consumer-resource\" OR \"resource competition\") AND (coexistence OR stability OR fluctuation OR stochastic)",
+      "(metacommunity OR \"spatial coexistence\" OR \"spatial storage effect\") AND (coexistence OR \"community assembly\" OR dispersal)",
+      "(permanence OR \"invasion graph\" OR invasibility OR \"uniform persistence\") AND (ecology OR community OR \"Lotka-Volterra\" OR competition)",
+      "(ForestGEO OR \"forest dynamics plot\" OR \"boreal forest\") AND (coexistence OR diversity OR \"density dependence\" OR neighborhood)",
+      "(\"higher-order interaction\" OR \"higher order interaction\" OR intransitive) AND (coexistence OR community)"
+    ],
+    "europepmc": [
+      "\"coexistence theory\" OR \"storage effect\" OR \"relative nonlinearity\" OR \"niche difference\" OR \"fitness difference\" OR \"invasion growth rate\"",
+      "\"structural stability\" AND (coexistence OR community OR competition)",
+      "biodiversity AND (\"ecosystem stability\" OR \"ecosystem functioning\" OR asynchrony OR \"portfolio effect\")",
+      "(\"environmental stochasticity\" OR \"demographic stochasticity\" OR \"stochastic Lotka-Volterra\") AND (coexistence OR community OR persistence)",
+      "(metacommunity OR permanence OR \"invasion graph\") AND (coexistence OR competition)",
+      "(\"consumer-resource\" OR \"resource competition\") AND (coexistence OR stability)"
+    ],
+    "crossref": [
+      "modern coexistence theory storage effect",
+      "structural stability coexistence feasibility",
+      "biodiversity ecosystem stability asynchrony",
+      "stochastic Lotka-Volterra coexistence persistence"
+    ],
+    "semantic_scholar": [
+      "modern coexistence theory storage effect relative nonlinearity",
+      "structural stability feasibility domain coexistence",
+      "biodiversity ecosystem stability asynchrony portfolio effect",
+      "stochastic Lotka-Volterra environmental stochasticity coexistence"
+    ]
+  },
+  "arxiv": {
+    "categories": [
+      "q-bio.PE",
+      "math.DS",
+      "nlin.AO",
+      "physics.bio-ph",
+      "cond-mat.stat-mech",
+      "q-bio.QM"
+    ],
+    "max_results_per_category": 200
+  },
+  "biorxiv": {
+    "server": "biorxiv",
+    "categories": [
+      "ecology",
+      "evolutionary biology"
+    ]
+  },
+  "sources": {
+    "arxiv": true,
+    "biorxiv": true,
+    "openalex": true,
+    "europepmc": true,
+    "crossref": false,
+    "semantic_scholar": false
+  },
+  "window": {
+    "default_days": 2,
+    "expand_to_days": 7,
+    "min_high_score_candidates": 3,
+    "weekly_days": 7,
+    "catchup_days": 30
+  },
+  "topic_groups": [
+    {
+      "label": "MCT core",
+      "weight": 100,
+      "terms": [
+        "modern coexistence theory",
+        "coexistence theory",
+        "storage effect",
+        "relative nonlinearity",
+        "niche difference",
+        "fitness difference",
+        "niche and fitness difference",
+        "stabilizing mechanism",
+        "equalizing mechanism",
+        "stabilizing niche",
+        "invasion growth rate",
+        "low-density growth rate",
+        "coexistence mechanism",
+        "niche overlap",
+        "negative frequency dependence",
+        "frequency-dependent",
+        "lottery model",
+        "temporal niche",
+        "fluctuation-dependent",
+        "chesson"
+      ],
+      "weak_terms": [
+        "frequency dependence",
+        "stabilizing",
+        "equalizing"
+      ]
+    },
+    {
+      "label": "Structural stability & feasibility",
+      "weight": 90,
+      "terms": [
+        "structural stability",
+        "feasibility domain",
+        "structural niche",
+        "structural fitness",
+        "interaction matrix",
+        "community matrix",
+        "may stability",
+        "diagonal stability",
+        "d-stability"
+      ],
+      "weak_terms": [
+        "feasibility",
+        "lyapunov",
+        "asymptotic stability"
+      ]
+    },
+    {
+      "label": "Stochastic dynamics",
+      "weight": 90,
+      "terms": [
+        "stochastic differential equation",
+        "stochastic lotka",
+        "environmental stochasticity",
+        "demographic stochasticity",
+        "fokker-planck",
+        "linear noise approximation",
+        "quasi-stationary",
+        "stochastic persistence",
+        "stochastic coexistence",
+        "random matrix",
+        "random lotka-volterra",
+        "noise-induced",
+        "extinction time",
+        "time to extinction",
+        "colored noise",
+        "autocorrelated environment",
+        "environmental autocorrelation"
+      ],
+      "weak_terms": [
+        "stochastic model",
+        "diffusion approximation",
+        "master equation",
+        "environmental variability",
+        "environmental fluctuation"
+      ]
+    },
+    {
+      "label": "Coexistence & community theory",
+      "weight": 60,
+      "terms": [
+        "species coexistence",
+        "competitive exclusion",
+        "lotka-volterra",
+        "consumer-resource",
+        "resource competition",
+        "community assembly",
+        "priority effect",
+        "intransitive",
+        "higher-order interaction",
+        "niche partitioning",
+        "stable coexistence"
+      ],
+      "weak_terms": [
+        "coexistence",
+        "competition model",
+        "community dynamics",
+        "competitive community"
+      ]
+    },
+    {
+      "label": "BEF/BES",
+      "weight": 80,
+      "terms": [
+        "biodiversity-ecosystem functioning",
+        "biodiversity and ecosystem functioning",
+        "biodiversity effects",
+        "ecosystem functioning",
+        "ecosystem stability",
+        "temporal stability",
+        "community stability",
+        "asynchrony",
+        "species synchrony",
+        "portfolio effect",
+        "insurance hypothesis",
+        "complementarity effect",
+        "selection effect",
+        "diversity-stability",
+        "overyielding",
+        "invariability"
+      ],
+      "weak_terms": [
+        "productivity",
+        "resilience",
+        "resistance and recovery",
+        "ecosystem function"
+      ]
+    },
+    {
+      "label": "Spatial & metacommunity",
+      "weight": 60,
+      "terms": [
+        "metacommunity",
+        "metapopulation",
+        "spatial coexistence",
+        "spatial storage effect",
+        "reaction-diffusion",
+        "metapopulation capacity",
+        "source-sink"
+      ],
+      "weak_terms": [
+        "dispersal",
+        "spatial heterogeneity",
+        "spatial scale",
+        "beta diversity",
+        "patch dynamics"
+      ]
+    },
+    {
+      "label": "Permanence & invasibility",
+      "weight": 80,
+      "terms": [
+        "permanence",
+        "permanent coexistence",
+        "invasion graph",
+        "invasibility",
+        "mutual invasibility",
+        "uniform persistence",
+        "invasion scheme",
+        "average lyapunov function",
+        "persistence theory",
+        "robust persistence"
+      ]
+    },
+    {
+      "label": "Forest empirics",
+      "weight": 50,
+      "terms": [
+        "forestgeo",
+        "forest dynamics plot",
+        "boreal forest",
+        "conspecific negative density dependence",
+        "cndd",
+        "janzen-connell",
+        "neighborhood competition",
+        "neighbourhood competition",
+        "tree species coexistence"
+      ],
+      "weak_terms": [
+        "aspen",
+        "spruce",
+        "mixedwood",
+        "forest diversity",
+        "tree community",
+        "forest census"
+      ]
+    },
+    {
+      "label": "Methods & models",
+      "weight": 40,
+      "terms": [
+        "integral projection model",
+        "mixed-effects model",
+        "glmm",
+        "nonlinear mixed",
+        "state-space model",
+        "hierarchical bayesian",
+        "meta-analysis"
+      ],
+      "weak_terms": [
+        "time series analysis",
+        "parameter estimation",
+        "identifiability",
+        "model comparison",
+        "sensitivity analysis",
+        "simulation study"
+      ]
+    }
+  ],
+  "cross_topic_bonuses": [
+    {
+      "labels": [
+        "MCT core",
+        "Stochastic dynamics"
+      ],
+      "bonus": 15,
+      "reason": "stochastic MCT - speaks directly to the stochastic-mct project"
+    },
+    {
+      "labels": [
+        "MCT core",
+        "Structural stability & feasibility"
+      ],
+      "bonus": 15,
+      "reason": "pairwise vs structural metrics - speaks directly to the structural-stability project"
+    },
+    {
+      "labels": [
+        "BEF/BES",
+        "Stochastic dynamics"
+      ],
+      "bonus": 10,
+      "reason": "diversity-stability relationships in stochastic environments"
+    },
+    {
+      "labels": [
+        "MCT core",
+        "Forest empirics"
+      ],
+      "bonus": 12,
+      "reason": "testing coexistence mechanisms with forest-plot data"
+    },
+    {
+      "labels": [
+        "Permanence & invasibility",
+        "Coexistence & community theory"
+      ],
+      "bonus": 8,
+      "reason": "permanence criteria applied to community coexistence"
+    },
+    {
+      "labels": [
+        "MCT core",
+        "Spatial & metacommunity"
+      ],
+      "bonus": 8,
+      "reason": "spatial storage effect / metacommunity coexistence"
+    }
+  ],
+  "author_watchlist": [
+    {
+      "name": "Peter Chesson",
+      "variants": [
+        "P. Chesson",
+        "Chesson P"
+      ]
+    },
+    {
+      "name": "Sebastian J. Schreiber",
+      "variants": [
+        "Sebastian Schreiber",
+        "Schreiber SJ"
+      ]
+    },
+    {
+      "name": "Josef Hofbauer"
+    },
+    {
+      "name": "Jonathan M. Levine",
+      "variants": [
+        "Jonathan Levine",
+        "Levine JM"
+      ]
+    },
+    {
+      "name": "Nathan J. B. Kraft",
+      "variants": [
+        "Nathan Kraft",
+        "Kraft NJB"
+      ]
+    },
+    {
+      "name": "Peter B. Adler",
+      "variants": [
+        "Peter Adler",
+        "Adler PB"
+      ]
+    },
+    {
+      "name": "Stephen P. Ellner",
+      "variants": [
+        "Stephen Ellner",
+        "Ellner SP"
+      ]
+    },
+    {
+      "name": "Robin E. Snyder",
+      "variants": [
+        "Robin Snyder",
+        "Snyder RE"
+      ]
+    },
+    {
+      "name": "Simon Maccracken Stump",
+      "variants": [
+        "Simon Stump",
+        "Stump SM"
+      ]
+    },
+    {
+      "name": "György Barabás",
+      "variants": [
+        "Gyorgy Barabas",
+        "Barabás G"
+      ]
+    },
+    {
+      "name": "Rafael D'Andrea",
+      "variants": [
+        "Rafael D Andrea",
+        "D'Andrea R"
+      ]
+    },
+    {
+      "name": "Serguei Saavedra",
+      "variants": [
+        "Saavedra S"
+      ]
+    },
+    {
+      "name": "Rudolf P. Rohr",
+      "variants": [
+        "Rudolf Rohr",
+        "Rohr RP"
+      ]
+    },
+    {
+      "name": "Oscar Godoy",
+      "variants": [
+        "Godoy O"
+      ]
+    },
+    {
+      "name": "Lauren G. Shoemaker",
+      "variants": [
+        "Lauren Shoemaker",
+        "Shoemaker LG"
+      ]
+    },
+    {
+      "name": "Lauren M. Hallett",
+      "variants": [
+        "Lauren Hallett",
+        "Hallett LM"
+      ]
+    },
+    {
+      "name": "Chuliang Song"
+    },
+    {
+      "name": "Jurg W. Spaak",
+      "variants": [
+        "Jürg Spaak",
+        "Jurg Spaak",
+        "Spaak JW"
+      ]
+    },
+    {
+      "name": "Frederik De Laender",
+      "variants": [
+        "De Laender F"
+      ]
+    },
+    {
+      "name": "Stefano Allesina",
+      "variants": [
+        "Allesina S"
+      ]
+    },
+    {
+      "name": "Jacopo Grilli",
+      "variants": [
+        "Grilli J"
+      ]
+    },
+    {
+      "name": "Guy Bunin",
+      "variants": [
+        "Bunin G"
+      ]
+    },
+    {
+      "name": "Michel Loreau",
+      "variants": [
+        "Loreau M"
+      ]
+    },
+    {
+      "name": "Shaopeng Wang",
+      "variants": [
+        "Wang Shaopeng"
+      ]
+    },
+    {
+      "name": "Forest Isbell",
+      "variants": [
+        "Isbell F"
+      ]
+    },
+    {
+      "name": "Andrew Gonzalez",
+      "variants": [
+        "Gonzalez A"
+      ]
+    },
+    {
+      "name": "Jonathan M. Chase",
+      "variants": [
+        "Jonathan Chase",
+        "Chase JM"
+      ]
+    },
+    {
+      "name": "Mathew A. Leibold",
+      "variants": [
+        "Mathew Leibold",
+        "Leibold MA"
+      ]
+    },
+    {
+      "name": "Ryan A. Chisholm",
+      "variants": [
+        "Ryan Chisholm",
+        "Chisholm RA"
+      ]
+    },
+    {
+      "name": "Liza S. Comita",
+      "variants": [
+        "Liza Comita",
+        "Comita LS"
+      ]
+    },
+    {
+      "name": "Chengjin Chu",
+      "variants": [
+        "Chu Chengjin"
+      ]
+    },
+    {
+      "name": "Stephen P. Hubbell",
+      "variants": [
+        "Stephen Hubbell",
+        "Hubbell SP"
+      ]
+    }
+  ],
+  "journal_tiers": {
+    "tier_1": [
+      "Nature",
+      "Science",
+      "Proceedings of the National Academy of Sciences",
+      "Proceedings of the National Academy of Sciences of the United States of America",
+      "PNAS",
+      "Nature Ecology & Evolution",
+      "Nature Ecology and Evolution",
+      "Ecology Letters",
+      "The American Naturalist",
+      "American Naturalist",
+      "Ecological Monographs",
+      "Trends in Ecology & Evolution",
+      "Trends in Ecology and Evolution",
+      "Ecology",
+      "Journal of Ecology",
+      "Annual Review of Ecology, Evolution, and Systematics",
+      "Proceedings of the Royal Society B: Biological Sciences",
+      "Proceedings of the Royal Society B",
+      "Global Change Biology",
+      "Nature Communications",
+      "Science Advances",
+      "eLife",
+      "PLOS Biology",
+      "Current Biology"
+    ],
+    "tier_2": [
+      "Oikos",
+      "Ecography",
+      "Journal of Animal Ecology",
+      "Functional Ecology",
+      "Methods in Ecology and Evolution",
+      "Theoretical Ecology",
+      "Journal of Theoretical Biology",
+      "Journal of Mathematical Biology",
+      "Bulletin of Mathematical Biology",
+      "Theoretical Population Biology",
+      "Ecological Modelling",
+      "Ecology and Evolution",
+      "Ecosphere",
+      "Oecologia",
+      "Journal of Vegetation Science",
+      "Forest Ecology and Management",
+      "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "Philosophical Transactions of the Royal Society B",
+      "Physical Review E",
+      "Journal of the Royal Society Interface",
+      "Population Ecology",
+      "Journal of Biogeography",
+      "Global Ecology and Biogeography",
+      "Biological Reviews",
+      "Ecological Applications",
+      "Journal of Applied Ecology",
+      "Frontiers in Ecology and Evolution",
+      "Diversity and Distributions",
+      "Basic and Applied Ecology",
+      "Plant Ecology",
+      "Community Ecology",
+      "Journal of Plant Ecology",
+      "Forests",
+      "Forest Ecosystems",
+      "Physical Review Letters",
+      "Physical Review X",
+      "Journal of Statistical Mechanics: Theory and Experiment",
+      "Chaos",
+      "SIAM Journal on Applied Mathematics",
+      "Journal of Nonlinear Science",
+      "Journal of Differential Equations",
+      "Nonlinearity",
+      "Journal of Mathematical Analysis and Applications",
+      "Discrete and Continuous Dynamical Systems - B",
+      "Mathematical Biosciences",
+      "PLOS Computational Biology"
+    ],
+    "tier_3": []
+  },
+  "exclusion_terms": [
+    "human-wildlife",
+    "wildlife conflict",
+    "human-robot",
+    "spectrum sharing",
+    "wi-fi",
+    "wifi",
+    "5g",
+    "6g",
+    "tumor",
+    "tumour",
+    "cancer cell",
+    "peaceful coexistence",
+    "ethnic",
+    "religious coexistence",
+    "intercultural"
+  ],
+  "prescreen": {
+    "queue_min_score": 30,
+    "high_score": 70,
+    "title_multiplier": 1.0,
+    "abstract_multiplier": 0.5,
+    "weak_multiplier": 0.35,
+    "saturation": 80,
+    "tier_bonus": {
+      "1": 10,
+      "2": 6,
+      "3": 3
+    },
+    "author_bonus": 15,
+    "max_queue": 60,
+    "abstract_chars": 1200
+  },
+  "review": {
+    "recommendation_threshold": 70,
+    "max_recommendations": 10,
+    "weights": {
+      "relevance": 0.4,
+      "novelty": 0.2,
+      "quality": 0.15,
+      "methodology": 0.15,
+      "inspiration": 0.1
+    },
+    "tiers": {
+      "★★★": 85,
+      "★★": 70
+    },
+    "language": "en",
+    "term_explanation_mode": "brief",
+    "ecologist_summary_words": "80-160",
+    "ecologist_summary_min_chars": 200,
+    "plain_summary_label": "For a general ecologist",
+    "max_peripheral": 10,
+    "strong_recommendation_rules": [
+      {
+        "labels": [
+          "MCT core",
+          "Stochastic dynamics"
+        ],
+        "min_score": 85,
+        "reason": "MCT mechanism partitioning in stochastic environments (stochastic-mct project)"
+      },
+      {
+        "labels": [
+          "MCT core",
+          "Structural stability & feasibility"
+        ],
+        "min_score": 85,
+        "reason": "comparison of pairwise and structural metrics (structural-stability project)"
+      }
+    ]
+  },
+  "focus_modes": {
+    "mct": {
+      "groups": [
+        "MCT core",
+        "Coexistence & community theory",
+        "Permanence & invasibility"
+      ],
+      "queries": {
+        "openalex": [
+          "\"modern coexistence theory\" OR \"coexistence theory\" OR \"storage effect\" OR \"relative nonlinearity\" OR \"niche difference\" OR \"fitness difference\" OR \"invasion growth rate\" OR \"lottery model\""
+        ],
+        "europepmc": [
+          "\"coexistence theory\" OR \"storage effect\" OR \"relative nonlinearity\" OR \"niche difference\" OR \"fitness difference\""
+        ]
+      }
+    },
+    "structural": {
+      "groups": [
+        "Structural stability & feasibility",
+        "MCT core",
+        "Coexistence & community theory"
+      ],
+      "queries": {
+        "openalex": [
+          "(\"structural stability\" OR \"feasibility domain\" OR feasibility) AND (coexistence OR community OR competition OR \"interaction matrix\")"
+        ],
+        "europepmc": [
+          "(\"structural stability\" OR feasibility) AND (coexistence OR community OR competition)"
+        ]
+      }
+    },
+    "stochastic": {
+      "groups": [
+        "Stochastic dynamics",
+        "MCT core",
+        "Coexistence & community theory"
+      ],
+      "queries": {
+        "openalex": [
+          "(\"environmental stochasticity\" OR \"demographic stochasticity\" OR \"stochastic Lotka-Volterra\" OR \"stochastic differential equation\" OR \"Fokker-Planck\" OR \"random matrix\") AND (coexistence OR community OR persistence OR extinction OR ecology)"
+        ],
+        "europepmc": [
+          "(\"environmental stochasticity\" OR \"demographic stochasticity\" OR \"stochastic Lotka-Volterra\") AND (coexistence OR community OR persistence)"
+        ]
+      }
+    },
+    "bef": {
+      "groups": [
+        "BEF/BES",
+        "Stochastic dynamics",
+        "Coexistence & community theory"
+      ],
+      "queries": {
+        "openalex": [
+          "biodiversity AND (\"ecosystem stability\" OR \"ecosystem functioning\" OR \"temporal stability\" OR asynchrony OR \"portfolio effect\" OR \"insurance hypothesis\" OR overyielding)"
+        ],
+        "europepmc": [
+          "biodiversity AND (\"ecosystem stability\" OR \"ecosystem functioning\" OR asynchrony OR \"portfolio effect\")"
+        ]
+      }
+    },
+    "forest": {
+      "groups": [
+        "Forest empirics",
+        "MCT core",
+        "Coexistence & community theory",
+        "Methods & models"
+      ],
+      "queries": {
+        "openalex": [
+          "(ForestGEO OR \"forest dynamics plot\" OR \"boreal forest\" OR \"forest plot\") AND (coexistence OR diversity OR \"density dependence\" OR neighborhood OR \"Janzen-Connell\")"
+        ],
+        "europepmc": [
+          "(ForestGEO OR \"forest dynamics plot\" OR \"boreal forest\") AND (coexistence OR diversity OR \"density dependence\")"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "MCT",
+    "storage-effect",
+    "RNL",
+    "niche-fitness",
+    "structural-stability",
+    "feasibility",
+    "stochastic-LV",
+    "SDE",
+    "Fokker-Planck",
+    "permanence",
+    "invasion-graph",
+    "BEF",
+    "BES",
+    "asynchrony",
+    "metacommunity",
+    "consumer-resource",
+    "ForestGEO",
+    "boreal",
+    "CNDD",
+    "IPM",
+    "GLMM",
+    "methods",
+    "review"
+  ],
+  "delivery": {
+    "report_dir": "reports",
+    "bibtex": true,
+    "push": "none"
+  }
+}

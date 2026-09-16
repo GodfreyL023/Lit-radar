@@ -1,0 +1,193 @@
+{
+  "profile_name": "my-research-programme",
+  "configured": false,
+  "language": "en",
+  "contact_email": "",
+  "_how_to_fill": "Describe your programme in research_context, list 2-6 active_projects with short keys, write 5-10 boolean queries for openalex/europepmc, and 4-9 topic_groups with weights (1-100) and terms. Then set configured to true. A complete worked example is in config/examples/theoretical-ecology.json; field-by-field documentation is in references/profile_schema.md. Delete this _how_to_fill key when done.",
+  "research_context": "REPLACE ME: 2-4 sentences on what you work on, which theories/methods you use, and what data you rely on.",
+  "active_projects": [
+    {
+      "key": "project-a",
+      "label": "REPLACE ME: short label of an ongoing manuscript or project",
+      "keywords": [
+        "keyword 1",
+        "keyword 2"
+      ]
+    },
+    {
+      "key": "project-b",
+      "label": "REPLACE ME: another project",
+      "keywords": [
+        "keyword 3"
+      ]
+    }
+  ],
+  "priority_questions": [
+    "REPLACE ME: the 3-5 scientific questions you most want new papers to speak to"
+  ],
+  "queries": {
+    "openalex": [
+      "\"REPLACE ME phrase one\" OR \"phrase two\"",
+      "(\"topic\" AND (method OR system))"
+    ],
+    "europepmc": [
+      "\"REPLACE ME phrase one\" OR \"phrase two\""
+    ],
+    "crossref": [
+      "replace me simple phrase"
+    ],
+    "semantic_scholar": [
+      "replace me simple phrase"
+    ]
+  },
+  "arxiv": {
+    "categories": [
+      "q-bio.PE"
+    ],
+    "max_results_per_category": 200
+  },
+  "biorxiv": {
+    "server": "biorxiv",
+    "categories": [
+      "ecology"
+    ]
+  },
+  "sources": {
+    "arxiv": true,
+    "biorxiv": true,
+    "openalex": true,
+    "europepmc": true,
+    "crossref": false,
+    "semantic_scholar": false
+  },
+  "window": {
+    "default_days": 2,
+    "expand_to_days": 7,
+    "min_high_score_candidates": 3,
+    "weekly_days": 7,
+    "catchup_days": 30
+  },
+  "topic_groups": [
+    {
+      "label": "Core theme",
+      "weight": 100,
+      "terms": [
+        "REPLACE ME: specific multi-word terms that only your core topic uses"
+      ],
+      "weak_terms": [
+        "generic word that alone proves little"
+      ]
+    },
+    {
+      "label": "Secondary theme",
+      "weight": 60,
+      "terms": [
+        "REPLACE ME"
+      ],
+      "weak_terms": []
+    },
+    {
+      "label": "Methods",
+      "weight": 40,
+      "terms": [
+        "REPLACE ME: methods you care about"
+      ],
+      "weak_terms": []
+    }
+  ],
+  "cross_topic_bonuses": [
+    {
+      "labels": [
+        "Core theme",
+        "Secondary theme"
+      ],
+      "bonus": 15,
+      "reason": "REPLACE ME: why this intersection matters most"
+    }
+  ],
+  "author_watchlist": [
+    {
+      "name": "Firstname Lastname",
+      "variants": [
+        "Lastname F"
+      ]
+    }
+  ],
+  "journal_tiers": {
+    "tier_1": [
+      "Nature",
+      "Science",
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "tier_2": [],
+    "tier_3": []
+  },
+  "exclusion_terms": [
+    "REPLACE ME: words that mark the non-scientific homonyms of your keywords"
+  ],
+  "prescreen": {
+    "queue_min_score": 30,
+    "high_score": 70,
+    "title_multiplier": 1.0,
+    "abstract_multiplier": 0.5,
+    "weak_multiplier": 0.35,
+    "saturation": 80,
+    "tier_bonus": {
+      "1": 10,
+      "2": 6,
+      "3": 3
+    },
+    "author_bonus": 15,
+    "max_queue": 60,
+    "abstract_chars": 1200
+  },
+  "review": {
+    "recommendation_threshold": 70,
+    "max_recommendations": 10,
+    "weights": {
+      "relevance": 0.4,
+      "novelty": 0.2,
+      "quality": 0.15,
+      "methodology": 0.15,
+      "inspiration": 0.1
+    },
+    "tiers": {
+      "★★★": 85,
+      "★★": 70
+    },
+    "language": "en",
+    "term_explanation_mode": "brief",
+    "ecologist_summary_words": "80-160",
+    "ecologist_summary_min_chars": 200,
+    "plain_summary_label": "In plain language",
+    "max_peripheral": 10,
+    "strong_recommendation_rules": [
+      {
+        "labels": [
+          "Core theme",
+          "Secondary theme"
+        ],
+        "min_score": 85,
+        "reason": "REPLACE ME"
+      }
+    ]
+  },
+  "focus_modes": {
+    "core": {
+      "groups": [
+        "Core theme"
+      ],
+      "queries": {}
+    }
+  },
+  "tags": [
+    "REPLACE-ME",
+    "methods",
+    "review"
+  ],
+  "delivery": {
+    "report_dir": "reports",
+    "bibtex": true,
+    "push": "none"
+  }
+}
