@@ -1,0 +1,243 @@
+{
+  "_note": "All records are FICTIONAL test data (the 10.9999 DOI prefix does not exist); used only by the offline selftest and unit tests. Never treat them as real literature.",
+  "records": [
+    {
+      "title": "Partitioning the storage effect and relative nonlinearity in a stochastic consumer-resource model",
+      "abstract": "We derive a stochastic differential equation formulation of a two-consumer one-resource model with environmental stochasticity and show how the invasion growth rate decomposes into storage effect and relative nonlinearity terms. A Fokker-Planck analysis yields closed-form quasi-stationary distributions in the small-noise limit.",
+      "authors": [
+        "Ada Lovelace-Testcase",
+        "Boris Fixture",
+        "Cai Demo"
+      ],
+      "venue": "arXiv (q-bio.PE)",
+      "venue_type": "preprint",
+      "type": "preprint",
+      "published_date": "2026-09-15",
+      "doi": null,
+      "arxiv_id": "2609.00001",
+      "url": "https://arxiv.org/abs/2609.00001",
+      "pdf_url": "",
+      "peer_reviewed": false,
+      "is_preprint": true,
+      "published_doi": null,
+      "sources": [
+        "arxiv"
+      ],
+      "categories": [
+        "q-bio.PE",
+        "math.DS"
+      ]
+    },
+    {
+      "title": "Partitioning the storage effect and relative nonlinearity in a stochastic consumer–resource model",
+      "abstract": "",
+      "authors": [
+        "Ada Lovelace-Testcase",
+        "Boris Fixture"
+      ],
+      "venue": "preprint",
+      "venue_type": "preprint",
+      "type": "preprint",
+      "published_date": "2026-09-15",
+      "doi": "10.9999/demo.0001",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0001",
+      "pdf_url": "",
+      "peer_reviewed": false,
+      "is_preprint": true,
+      "published_doi": null,
+      "sources": [
+        "openalex"
+      ],
+      "categories": []
+    },
+    {
+      "title": "When do pairwise niche and fitness differences disagree with structural stability? A multispecies test",
+      "abstract": "Using 120 simulated and 14 empirical plant communities we compare pairwise niche difference and fitness difference metrics with feasibility domain measures of structural stability. Disagreement grows with species richness and with the variance of the interaction matrix.",
+      "authors": [
+        "Dana Example",
+        "Erik Placeholder"
+      ],
+      "venue": "Ecology Letters",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-16",
+      "doi": "10.9999/demo.0002",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0002",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "openalex",
+        "europepmc"
+      ],
+      "categories": []
+    },
+    {
+      "title": "Species asynchrony under autocorrelated environmental fluctuations stabilizes ecosystem functioning",
+      "abstract": "We extend diversity-stability theory to autocorrelated environments and show that the portfolio effect weakens as environmental autocorrelation increases, using a stochastic Lotka-Volterra framework and 30 years of grassland data.",
+      "authors": [
+        "Fen Sample",
+        "Gao Mock",
+        "Hana Stub"
+      ],
+      "venue": "Nature Ecology & Evolution",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-15",
+      "doi": "10.9999/demo.0003",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0003",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "openalex"
+      ],
+      "categories": []
+    },
+    {
+      "title": "Conspecific negative density dependence and tree species coexistence across ForestGEO plots",
+      "abstract": "",
+      "authors": [
+        "Ivo Dummy",
+        "Jun Testdata"
+      ],
+      "venue": "Journal of Ecology",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-16",
+      "doi": "10.9999/demo.0004",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0004",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "openalex"
+      ],
+      "categories": []
+    },
+    {
+      "title": "Human-wildlife coexistence in peri-urban landscapes: a survey",
+      "abstract": "We survey attitudes toward coyotes in peri-urban neighborhoods and discuss pathways to human-wildlife coexistence.",
+      "authors": [
+        "Kim Fake"
+      ],
+      "venue": "Conservation Science and Practice",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-15",
+      "doi": "10.9999/demo.0005",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0005",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "openalex"
+      ],
+      "categories": []
+    },
+    {
+      "title": "Seed dispersal distances of a tropical palm estimated with genetic markers",
+      "abstract": "Dispersal kernels were estimated from parentage analysis; mean dispersal distance was 43 m.",
+      "authors": [
+        "Lee Placeholder"
+      ],
+      "venue": "Biotropica",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-16",
+      "doi": "10.9999/demo.0006",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0006",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "europepmc"
+      ],
+      "categories": []
+    },
+    {
+      "title": "Invasion graphs and permanence for Lotka-Volterra systems with higher-order interactions",
+      "abstract": "We extend the invasion graph criterion for permanence to Lotka-Volterra systems with higher-order interactions and provide a computable sufficient condition for uniform persistence.",
+      "authors": [
+        "Mira Fictional",
+        "Nils Sample"
+      ],
+      "venue": "Journal of Mathematical Biology",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-14",
+      "doi": "10.9999/demo.0007",
+      "arxiv_id": "2609.00007",
+      "url": "https://doi.org/10.9999/demo.0007",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "categories": [
+        "math.DS"
+      ]
+    },
+    {
+      "title": "Coexistence of Wi-Fi and 5G in unlicensed spectrum: a game-theoretic analysis",
+      "abstract": "We model spectrum sharing between Wi-Fi and 5G NR-U as a repeated game.",
+      "authors": [
+        "Olu Mock"
+      ],
+      "venue": "arXiv (cs.NI)",
+      "venue_type": "preprint",
+      "type": "preprint",
+      "published_date": "2026-09-15",
+      "doi": null,
+      "arxiv_id": "2609.00009",
+      "url": "https://arxiv.org/abs/2609.00009",
+      "pdf_url": "",
+      "peer_reviewed": false,
+      "is_preprint": true,
+      "published_doi": null,
+      "sources": [
+        "arxiv"
+      ],
+      "categories": [
+        "cs.NI"
+      ]
+    },
+    {
+      "title": "Soil nutrient heterogeneity and grassland productivity",
+      "abstract": "Plots with higher spatial heterogeneity in soil nitrogen showed greater species coexistence and slightly higher temporal stability of productivity over eight years.",
+      "authors": [
+        "Pia Demo",
+        "Quinn Fixture"
+      ],
+      "venue": "Oikos",
+      "venue_type": "journal",
+      "type": "journal-article",
+      "published_date": "2026-09-16",
+      "doi": "10.9999/demo.0010",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.9999/demo.0010",
+      "pdf_url": "",
+      "peer_reviewed": true,
+      "is_preprint": false,
+      "published_doi": null,
+      "sources": [
+        "openalex"
+      ],
+      "categories": []
+    }
+  ]
+}
