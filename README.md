@@ -1,4 +1,4 @@
-# Lit-Radar
+# Lit-radar
 
 **A literature radar skill for Claude.** Every morning (or once a week) it searches arXiv, bioRxiv, OpenAlex and Europe PMC for papers matching a research profile you write once, deduplicates and prescreens them, has Claude read the evidence and re-score each candidate, and delivers a short, highly selective Markdown report - at most ten papers, zero when nothing clears the bar - with a plain-language explanation of every recommended paper, links to your own projects, reviewer-style caveats, testable research ideas and BibTeX.
 
